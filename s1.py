@@ -15,7 +15,7 @@ while True:
 
         for p in range(200):
             startTime=time.time()
-            print(p,' -time')
+            print(p ,' -time')
             for x in range(1):
                 a=random.randint(15,30)
             print (a)
@@ -25,7 +25,7 @@ while True:
             chrome_options = webdriver.ChromeOptions()
             chrome_options.add_argument("--mute-audio")
             print("Opening chrome")
-            driver = webdriver.Chrome(chrome_options=chrome_options)
+            driver = webdriver.Chrome(options=chrome_options)
 
             driver.get("https://soundcloud.com/inspiron-285028880/sets/playstation")
             driver.find_element_by_tag_name('body').send_keys(Keys.CONTROL+'r')
@@ -55,26 +55,41 @@ while True:
             ti=endTime-startTime
             print("it took -",ti,"sec")
             hj=random.randint(10,25)
-            driver.get("https://www.youtube.com/watch?v=aRs3zF4zc4A&feature=youtu.be")
-            time.sleep(hj)
+            driver.get("https://www.youtube.com/watch?v=RQly8eEoaOw")
+            time.sleep(a)
             driver.find_element_by_tag_name('body').send_keys("l")
             driver.implicitly_wait(hj)
             driver.find_element_by_tag_name('body').send_keys("l")
-            driver.implicitly_wait(hj)
-            driver.get("https://www.youtube.com/watch?v=2-cJWKL4dcE")
-            driver.implicitly_wait(hj)
             driver.find_element_by_tag_name('body').send_keys("l")
             driver.implicitly_wait(hj)
+            driver.find_element_by_tag_name('body').send_keys(Keys.END)
+            driver.get("https://www.youtube.com/watch?v=oaEwhjK-nFg")
+            driver.implicitly_wait(a)
             driver.find_element_by_tag_name('body').send_keys("l")
-            time.sleep(hj)
-            driver.implicitly_wait(hj)
-            driver.get("https://www.youtube.com/watch?v=wR6C-oDBZ-4")
-            driver.implicitly_wait(hj)
             driver.find_element_by_tag_name('body').send_keys("l")
             driver.implicitly_wait(hj)
             driver.find_element_by_tag_name('body').send_keys("l")
             time.sleep(hj)
-            driver.get("https://www.instagram.com/p/Bo3xJ5RFz46/")
+            driver.implicitly_wait(hj)
+            driver.find_element_by_tag_name('body').send_keys(Keys.END)
+            driver.get("https://www.youtube.com/watch?v=EiZMgWvmzq0")
+            driver.implicitly_wait(a)
+            driver.find_element_by_tag_name('body').send_keys("l")
+            driver.find_element_by_tag_name('body').send_keys("l")
+            driver.implicitly_wait(hj)
+            driver.find_element_by_tag_name('body').send_keys("l")
+            time.sleep(hj)
+            driver.implicitly_wait(hj)
+            driver.find_element_by_tag_name('body').send_keys(Keys.END)           
+            driver.get("https://www.youtube.com/watch?v=oaEwhjK-nFg")
+            driver.implicitly_wait(a)
+            driver.find_element_by_tag_name('body').send_keys("l")
+            driver.implicitly_wait(hj)
+            driver.find_element_by_tag_name('body').send_keys("l")
+            driver.find_element_by_tag_name('body').send_keys("l")
+            time.sleep(hj)
+            driver.find_element_by_tag_name('body').send_keys(Keys.END)
+            driver.get("https://www.youtube.com/watch?v=MRF6RjDOwvI")
             time.sleep(2)
             driver.find_element_by_css_selector(".QvAa1").click()
 
@@ -85,6 +100,4 @@ while True:
     except Exception:
         pass
         driver.close()
-    else:
-        #break
-        driver.close()
+    
